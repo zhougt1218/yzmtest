@@ -1,0 +1,31 @@
+<!DOCTYPE HTML >
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>    
+    <title>My JSP 'index.jsp' starting page</title>
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+    <script type="text/javascript" src="js/jquery-1.7.2.js" th:src=@{/asserts/js/jquery-1.7.2.js}></script>
+  	<!-- <link rel="stylesheet" href="css/style.css" type="text/css"></link> -->
+  </head>
+  
+  <body>
+  字母验证 &nbsp; 
+	<canvas id="myCanvas" width="75" height="30" style="border:1px solid #d3d3d3;vertical-align: text-bottom;"></canvas> &nbsp; 
+	<input type="text" name="yzm" id="cvyzm" style="vertical-align: text-bottom;"/>
+	<label id="yz1"><span style="border:1px solid black;background-color:gray;">验 证</span></label>
+	<hr/>
+算数验证 &nbsp; 
+	<canvas id="myCanvas1" width="75" height="30" style="border:1px solid #d3d3d3;vertical-align: text-bottom;"></canvas> &nbsp; 
+	<input type="text" name="numyzm" id="numyzm" style="vertical-align: text-bottom;"/>
+	<label id="yz2"><span style="border:1px solid black;background-color:gray;">验 证</span></label>
+	<hr/>
+汉字验证 &nbsp; 
+	<canvas id="myCanvas2" width="75" height="30" style="border:1px solid #d3d3d3;vertical-align: text-bottom;"></canvas> &nbsp; 
+	<input type="text" name="txtyzm" id="txtyzm" style="vertical-align: text-bottom;"/>
+	<label id="yz3"><span style="border:1px solid black;background-color:gray;">验 证</span></label>
+  </body>
+  <script type="text/javascript" src="js/style.js" th:src="@{/asserts/js/style.js}"></script>
+</html>
